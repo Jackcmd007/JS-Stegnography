@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+input[type="file"],
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#preview img {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  max-height: 100%; /* Adjust the maximum height as needed */
+  width: 300px; /* Adjust the desired width */
+  height: 200px; /* Adjust the desired height */
+  object-fit: contain; /* Preserve aspect ratio */
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#output {
+  margin-top: 20px;
+}
+
+#output img {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  max-height: 100%; /* Adjust the maximum height as needed */
+  width: 300px; /* Adjust the desired width */
+  height: 200px; /* Adjust the desired height */
+  object-fit: contain; /* Preserve aspect ratio */
+  margin-top: 10px;
+}
+
+#downloadButton {
+  margin-top: 10px;
+}

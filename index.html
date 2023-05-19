@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steganography </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Steganography Application</h1>
+
+    <h2>Original Image</h2>
+    <input type="file" id="imageInput" onchange="previewImage(event)" />
+    <br />
+    <div id="preview"></div>
+
+    <h2>Encode</h2>
+    <textarea id="messageInput" placeholder="Enter secret message"></textarea>
+    <button onclick="encode()">Encode Message</button>
+    <br />
+    <h2>Decode</h2>
+    <input type="file" id="encodedImageInput" />
+    <button onclick="decode()">Decode Message</button>
+    <br />
+    <h2>Output</h2>
+    <div id="output">
+      <textarea id="decodedText" placeholder="Decoded text"></textarea>
+      <button id="copyButton" onclick="copyText()">Copy Text</button>
+    </div>
+
+    <button id="downloadButton">Download Encoded Image</button>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/encode.js"></script>
+    <script src="./scripts/decode.js"></script>
+    <script src="./scripts/helpers.js"></script>
+  </body>
+</html>
